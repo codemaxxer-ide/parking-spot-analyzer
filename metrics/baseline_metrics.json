@@ -1,0 +1,82 @@
+{
+  "in_domain": {
+    "sample_count": 180,
+    "vacant_count": 90,
+    "occupied_count": 90,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": [
+      [
+        90,
+        0
+      ],
+      [
+        0,
+        90
+      ]
+    ],
+    "positive_class": "OCCUPIED (1)",
+    "matrix_order": "rows=true, columns=predicted; class order [VACANT, OCCUPIED]",
+    "model": "baseline",
+    "split": "test",
+    "checkpoint_best_epoch": 8,
+    "checkpoint_sha256": "ceaaa371ef622dc1b444e0da8ffeedef4f9ac59f56d325b99f83dc4259712877",
+    "manifest_sha256": "55c14146e3ed2e3ed4b27c78c7360678b325bf54d9f542e691e0fe1eb1770a76"
+  },
+  "training": {
+    "model_type": "baseline",
+    "image_size": 128,
+    "batch_size": 32,
+    "requested_epochs": 8,
+    "requested_fine_tune_epochs": 0,
+    "learning_rate": 0.001,
+    "patience": 3,
+    "seed": 42,
+    "device": "cpu",
+    "threads": 4,
+    "manifest_sha256": "55c14146e3ed2e3ed4b27c78c7360678b325bf54d9f542e691e0fe1eb1770a76",
+    "train_count": 2440,
+    "validation_count": 135,
+    "pretrained_weights": null,
+    "label_map": {
+      "0": "VACANT",
+      "1": "OCCUPIED"
+    },
+    "training_sources": [
+      "dataset_a"
+    ],
+    "augmentation": "train only: scale 0.90-1, rotation +/-7 deg, mild color jitter, 15% blur",
+    "epochs_completed": 8,
+    "best_epoch": 8,
+    "best_validation_loss": 0.0009939367029195032,
+    "total_seconds": 90.39100000000326
+  },
+  "external": {
+    "sample_count": 4000,
+    "vacant_count": 2000,
+    "occupied_count": 2000,
+    "accuracy": 0.7635,
+    "precision": 0.706828885400314,
+    "recall": 0.9005,
+    "f1": 0.7919964819700968,
+    "confusion_matrix": [
+      [
+        1253,
+        747
+      ],
+      [
+        199,
+        1801
+      ]
+    ],
+    "positive_class": "OCCUPIED (1)",
+    "matrix_order": "rows=true, columns=predicted; class order [VACANT, OCCUPIED]",
+    "model": "baseline",
+    "split": "external",
+    "checkpoint_best_epoch": 8,
+    "checkpoint_sha256": "ceaaa371ef622dc1b444e0da8ffeedef4f9ac59f56d325b99f83dc4259712877",
+    "manifest_sha256": "62f25c965b410a79cd3454c67a664641b2d57111348efb9f6d9eb10319d57c0b"
+  }
+}

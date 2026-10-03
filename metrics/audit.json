@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "checks": [
+    "baseline/test: all metrics recomputed from 180 predictions",
+    "baseline/external: all metrics recomputed from 4000 predictions",
+    "mobilenet/test: all metrics recomputed from 180 predictions",
+    "mobilenet/external: all metrics recomputed from 4000 predictions",
+    "lighting_analysis.csv: condition counts recomputed; unknown tags omitted",
+    "occlusion_analysis.csv: condition counts recomputed; unknown tags omitted"
+  ],
+  "dataset_a_split_counts": {
+    "excluded": 3335,
+    "train": 2440,
+    "val": 135,
+    "test": 180
+  },
+  "dataset_b_count": 4000,
+  "reviewed_unique_crops": 96,
+  "runtime": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "numpy": "1.26.4",
+    "pillow": "11.2.1",
+    "opencv": "4.11.0",
+    "matplotlib": "3.10.3",
+    "cuda_available": false
+  },
+  "artifacts": [
+    {
+      "file": "results_summary.md",
+      "bytes": 4356,
+      "sha256": "406374a6f97598d2adbbdde70fb482669a0ee9ec9c2c2b7cb2afe9dbb666daae"
+    },
+    {
+      "file": "baseline_confusion_matrix.png",
+      "bytes": 25560,
+      "sha256": "75d18365055b1d8ba3d8975563dee312bde18faf94f2543a3d900eb97976169c"
+    },
+    {
+      "file": "mobilenet_confusion_matrix.png",
+      "bytes": 25538,
+      "sha256": "ff85a23637a0abb6fd8d242f75429007f925b2bbb4fe7da884cba7e63f61acdc"
+    },
+    {
+      "file": "baseline_external_confusion_matrix.png",
+      "bytes": 27858,
+      "sha256": "81535d67b968f7776f1b62563b9f2e830439dfc8f87326dfc4b103c36258a7e3"
+    },
+    {
+      "file": "mobilenet_external_confusion_matrix.png",
+      "bytes": 27657,
+      "sha256": "4b15717d1ff25c39a8c3208382a07aad1f2417e055fdf3e2a82c09e4e7d18517"
+    },
+    {
+      "file": "model_comparison.png",
+      "bytes": 26139,
+      "sha256": "5e24f36b4ff4bf6f4bd3037b9a34ff5351b080e458ac6e54c3cd970488220b44"
+    },
+    {
+      "file": "cross_dataset_comparison.png",
+      "bytes": 39646,
+      "sha256": "47fcdeee97454adea82fc68581423fb5f83c4c98545aa7afb98ad0c9eb7a79db"
+    },
+    {
+      "file": "training_curve_baseline.png",
+      "bytes": 61970,
+      "sha256": "aef443cbf4e53cec144b2523a19e0dfff73154096348045bd4eef759920ee6f6"
+    },
+    {
+      "file": "training_curve_mobilenet.png",
+      "bytes": 57697,
+      "sha256": "e0d3e86ff0fe6aa04d37d71609e924ff4b64f83fa2eb2a84efa0311f2c1cefdf"
+    },
+    {
+      "file": "lighting_analysis.png",
+      "bytes": 75262,
+      "sha256": "669a9157479952d9d23c2cd408e178718fcb235cb228da271a08506506ae9870"
+    },
+    {
+      "file": "occlusion_analysis.png",
+      "bytes": 66102,
+      "sha256": "491f0c1f762b97a47cda9ae2a6f39e93381db76edfa6a4e5343df611af9e6a27"
+    },
+    {
+      "file": "weather_analysis.png",
+      "bytes": 65876,
+      "sha256": "cf9f3df4686d21c0187739313940e6073ebc6d2f1ac973d8b69b704832eb1315"
+    },
+    {
+      "file": "correct_predictions.jpg",
+      "bytes": 254473,
+      "sha256": "2cb695b382cc470b97714cab3d635ec032d6f56ab0b0e6ce20f634aa7bd7fc25"
+    },
+    {
+      "file": "failure_cases.jpg",
+      "bytes": 213503,
+      "sha256": "a1a33eab09f30c9147e03536ecea7e1fd67c221e2c11c511281e88dec451ead5"
+    },
+    {
+      "file": "shadow_failures.jpg",
+      "bytes": 75438,
+      "sha256": "ae7d10687f2aba8a2d70f9339d76aa38634e82648456c41b22fba405387d2744"
+    },
+    {
+      "file": "occlusion_failures.jpg",
+      "bytes": 249003,
+      "sha256": "3c09f47a94b5a81fcefe83e70c42ff57c2d0de2cb0c0425533b26022e22c4e9d"
+    }
+  ]
+}

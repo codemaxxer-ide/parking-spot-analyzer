@@ -1,0 +1,15 @@
+model,dataset_source,dimension,condition,sample_count,correct,incorrect,accuracy,small_sample_warning
+baseline,dataset_b,weather,OVERCAST,1226,959,267,0.7822185970636215,False
+baseline,dataset_b,weather,RAINY,1035,809,226,0.7816425120772947,False
+baseline,dataset_b,weather,SUNNY,1739,1286,453,0.7395054629097182,False
+mobilenet,dataset_b,weather,OVERCAST,1226,1149,77,0.9371941272430668,False
+mobilenet,dataset_b,weather,RAINY,1035,960,75,0.927536231884058,False
+mobilenet,dataset_b,weather,SUNNY,1739,1580,159,0.9085681426106959,False
+baseline,dataset_b,lighting_tag,BRIGHT,4,2,2,0.5,True
+baseline,dataset_b,lighting_tag,DARK,8,7,1,0.875,True
+baseline,dataset_b,lighting_tag,NORMAL,74,56,18,0.7567567567567568,False
+baseline,dataset_b,lighting_tag,SHADOW,10,6,4,0.6,True
+mobilenet,dataset_b,lighting_tag,BRIGHT,4,3,1,0.75,True
+mobilenet,dataset_b,lighting_tag,DARK,8,5,3,0.625,True
+mobilenet,dataset_b,lighting_tag,NORMAL,74,69,5,0.9324324324324325,False
+mobilenet,dataset_b,lighting_tag,SHADOW,10,10,0,1.0,True

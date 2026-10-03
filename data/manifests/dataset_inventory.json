@@ -1,0 +1,123 @@
+{
+  "dataset_a": {
+    "source": "https://www.kaggle.com/datasets/iasadpanwhar/parking-lot-detection-counter",
+    "actual_root": "D:\\hackathon project\\kmec hackathon\\data\\raw\\dataset_a",
+    "raw_crops": 6090,
+    "class_counts": {
+      "0": 3045,
+      "1": 3045
+    },
+    "source_file_extensions": {
+      ".png": 2,
+      ".mp4": 4,
+      ".py": 1,
+      ".p": 1,
+      ".jpg": 6090
+    },
+    "non_crop_files": [
+      "data/raw/dataset_a/parking/mask_1920_1080.png",
+      "data/raw/dataset_a/parking/mask_crop.png",
+      "data/raw/dataset_a/parking/parking_1920_1080.mp4",
+      "data/raw/dataset_a/parking/parking_1920_1080_loop.mp4",
+      "data/raw/dataset_a/parking/parking_crop.mp4",
+      "data/raw/dataset_a/parking/parking_crop_loop.mp4",
+      "data/raw/dataset_a/parking/util.py",
+      "data/raw/dataset_a/parking/model/model.p"
+    ],
+    "frame_token_groups": 140,
+    "slot_token_groups": 100,
+    "split": {
+      "seed": 42,
+      "frame_token_boundaries": [
+        507,
+        676
+      ],
+      "embargo_token_units_each_side": 20,
+      "strategy": "disjoint stratified slot tokens AND separated chronological frame-token ranges",
+      "token_semantics": "inferred from filenames; original video/camera/day provenance is absent",
+      "counts": {
+        "train": {
+          "0": 1215,
+          "1": 1225
+        },
+        "val": {
+          "0": 65,
+          "1": 70
+        },
+        "test": {
+          "0": 90,
+          "1": 90
+        },
+        "excluded": {
+          "0": 1675,
+          "1": 1660
+        }
+      }
+    },
+    "bounding_box_ground_truth": "none found; masks mark slots, not vehicle boxes"
+  },
+  "dataset_b": {
+    "archive_jpeg_count": 144965,
+    "csv_matched_count": 144965,
+    "csv_columns": [
+      "camera",
+      "datetime",
+      "day",
+      "hour",
+      "image_url",
+      "minute",
+      "month",
+      "occupancy",
+      "slot_id",
+      "weather",
+      "year",
+      "occupant_changed"
+    ],
+    "archive_non_image_examples": [
+      "LABELS/camera7.txt",
+      "LABELS/rainy.txt",
+      "LABELS/camera4.txt",
+      "LABELS/overcast.txt",
+      "LABELS/train.txt",
+      "LABELS/camera9.txt",
+      "LABELS/val.txt",
+      "LABELS/camera8.txt",
+      "LABELS/camera6.txt",
+      "LABELS/sunny.txt",
+      "LABELS/camera2.txt",
+      "LABELS/camera1.txt",
+      "LABELS/camera3.txt",
+      "LABELS/all.txt",
+      "LABELS/test.txt",
+      "LABELS/camera5.txt"
+    ],
+    "selected": 4000,
+    "class_counts": {
+      "0": 2000,
+      "1": 2000
+    },
+    "camera_counts": {
+      "01": 458,
+      "02": 453,
+      "03": 433,
+      "04": 450,
+      "05": 452,
+      "06": 426,
+      "07": 428,
+      "08": 449,
+      "09": 451
+    },
+    "weather_counts": {
+      "OVERCAST": 1226,
+      "RAINY": 1035,
+      "SUNNY": 1739
+    },
+    "day_count": 23,
+    "selection": "balanced labels; seeded round-robin strata by weather, camera, day",
+    "lighting_occlusion_annotations": "not present in the official CSV; unknown until visual review"
+  },
+  "label_convention": {
+    "0": "VACANT",
+    "1": "OCCUPIED"
+  }
+}

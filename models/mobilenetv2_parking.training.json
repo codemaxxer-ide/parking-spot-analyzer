@@ -1,0 +1,28 @@
+{
+  "model_type": "mobilenet",
+  "image_size": 128,
+  "batch_size": 32,
+  "requested_epochs": 5,
+  "requested_fine_tune_epochs": 2,
+  "learning_rate": 0.001,
+  "patience": 3,
+  "seed": 42,
+  "device": "cpu",
+  "threads": 4,
+  "manifest_sha256": "55c14146e3ed2e3ed4b27c78c7360678b325bf54d9f542e691e0fe1eb1770a76",
+  "train_count": 2440,
+  "validation_count": 135,
+  "pretrained_weights": "IMAGENET1K_V2",
+  "label_map": {
+    "0": "VACANT",
+    "1": "OCCUPIED"
+  },
+  "training_sources": [
+    "dataset_a"
+  ],
+  "augmentation": "train only: scale 0.90-1, rotation +/-7 deg, mild color jitter, 15% blur",
+  "epochs_completed": 7,
+  "best_epoch": 7,
+  "best_validation_loss": 0.00452790604904294,
+  "total_seconds": 153.625
+}

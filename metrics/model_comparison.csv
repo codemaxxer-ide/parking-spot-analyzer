@@ -1,0 +1,5 @@
+model,dataset,sample_count,vacant_count,occupied_count,accuracy,precision,recall,f1
+baseline,in_domain,180,90,90,1.0,1.0,1.0,1.0
+baseline,external,4000,2000,2000,0.7635,0.706828885400314,0.9005,0.7919964819700968
+mobilenet,in_domain,180,90,90,1.0,1.0,1.0,1.0
+mobilenet,external,4000,2000,2000,0.92225,0.9834001144819691,0.859,0.9170002668801708

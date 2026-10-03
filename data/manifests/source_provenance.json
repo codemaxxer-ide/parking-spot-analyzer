@@ -1,0 +1,29 @@
+{
+  "dataset_a": {
+    "supplied_archive": "C:\\Users\\srika\\Downloads\\archive (1).zip",
+    "bytes": 261781689,
+    "sha256": "79053e91089acdc991b71aa7eb89c525d476306adda8da7b7c445c433915a0bd",
+    "source_url": "https://www.kaggle.com/datasets/iasadpanwhar/parking-lot-detection-counter",
+    "license": "No license file found in supplied archive; Kaggle reuse terms not verified from downloaded files."
+  },
+  "dataset_b": {
+    "dataset": "CNR-EXT subset of CNRPark+EXT",
+    "official_page": "http://cnrpark.it/",
+    "license_as_stated_by_official_page": "Open Data Commons Open Database License (ODbL) v1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "downloads": [
+      {
+        "url": "https://github.com/fabiocarrara/deep-parking/releases/download/archive/CNRPark+EXT.csv",
+        "file": "CNRPark+EXT.csv",
+        "bytes": 18132695,
+        "sha256": "26416454cb8b184006431d0c149d31beabb8ef65d8eb2212cf4a39914a470dc8"
+      },
+      {
+        "url": "https://github.com/fabiocarrara/deep-parking/releases/download/archive/CNR-EXT-Patches-150x150.zip",
+        "file": "CNR-EXT-Patches-150x150.zip",
+        "bytes": 449502403,
+        "sha256": "84169527af6ad6aaf51729663b59283bc5f28368ff9ddd7856198eec226056d6"
+      }
+    ]
+  }
+}

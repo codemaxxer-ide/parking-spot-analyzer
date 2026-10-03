@@ -1,0 +1,7 @@
+model,dataset_source,dimension,condition,sample_count,correct,incorrect,accuracy,small_sample_warning
+baseline,dataset_b,occlusion_tag,HEAVY,7,6,1,0.8571428571428571,True
+baseline,dataset_b,occlusion_tag,NONE,65,48,17,0.7384615384615385,False
+baseline,dataset_b,occlusion_tag,PARTIAL,23,17,6,0.7391304347826086,True
+mobilenet,dataset_b,occlusion_tag,HEAVY,7,3,4,0.42857142857142855,True
+mobilenet,dataset_b,occlusion_tag,NONE,65,63,2,0.9692307692307692,False
+mobilenet,dataset_b,occlusion_tag,PARTIAL,23,21,2,0.9130434782608695,True

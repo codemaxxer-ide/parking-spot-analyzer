@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+
+# Large / generated / private
+*.mp4
+*.zip
+*.part
+data/raw/
+*.pt
+artifacts/*
+*.log
+
+# Small files the dashboard needs to run
+!models/*.pt
+!artifacts/evaluation/
+!artifacts/dataset_a_reference.jpg
+!artifacts/dataset_a_result_frame.jpg
